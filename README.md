@@ -32,5 +32,9 @@ Arguments
 Options
 -------
 
-    * parent        : (element) An element that is the parent of all the links that you want to track. Defaults to document.body.
-    * fileTypes     : (array) The list of file extensions that should be tracked as downloadable files. Defaults to: [ "pdf", "zip", "rar", "tgz", "gz","gzip", "jpg", "png", "svg", "gif", "doc", "eps", "xls", "ppt", "xls", "txt", "vsd", "js", "css", "rar", "exe", "wma", "mov", "avi", "wmv", "mp3"]
+* parent        : (element) An element that is the parent of all the links that you want to track. Defaults to document.body.
+* fileTypes     : (array) The list of file extensions that should be tracked as downloadable files. Defaults to: [ "pdf", "zip", "rar", "tgz", "gz","gzip", "jpg", "png", "svg", "gif", "doc", "eps", "xls", "ppt", "xls", "txt", "vsd", "js", "css", "rar", "exe", "wma", "mov", "avi", "wmv", "mp3"]
+* event         : (string) The type of event to bind the tracking action to:
+    1. click - Fires when the user clicks on the link. Pros: canceled clicks will not be tracked. Cons: middle button clicks will not be tracked
+    2. mousedown - Fires when the user pushes down on the link. Pros: middle clicks will be tracked. Cons: canceled clicks will be tracked
+    3. mouseup *default*  - Pros: middle clicks will be tracked and canceled clicks will not be tracked. Cons: ...
