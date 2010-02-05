@@ -11,11 +11,11 @@ How to use
 
 1. Install the Google Analytics tracking code as usual. The asynchronous and synchronous versions are both supported.
 2. Instantiate an ExitPoll object once the DOM is ready.
-    
-    #JS
+        
     window.addEvent("domready", function(){
        new ExitPoll(); 
     });
+
 
 ExitPoll will then bind mouseup events on all links that point to another server, different port on the same server, or non-html file on the same server. Mailto links will also be caught. When the user clicks on one of the links, and does not cancel the click, ExitPoll will register a PageView with Google Analytics. Outgoing links will be prepended with "/outgoing/". Download links will be prepended with "/download/".
 
@@ -32,5 +32,5 @@ Arguments
 Options
 -------
 
-* parent        : (element) An element that is the parent of all the links that you want to track. Defaults to document.body.
-* fileTypes     : (array) The list of file extensions that should be tracked as downloadable files. Defaults to: [ "pdf", "zip", "rar", "tgz", "gz","gzip", "jpg", "png", "svg", "gif", "doc", "eps", "xls", "ppt", "xls", "txt", "vsd", "js", "css", "rar", "exe", "wma", "mov", "avi", "wmv", "mp3"]
+    * parent        : (element) An element that is the parent of all the links that you want to track. Defaults to document.body.
+    * fileTypes     : (array) The list of file extensions that should be tracked as downloadable files. Defaults to: [ "pdf", "zip", "rar", "tgz", "gz","gzip", "jpg", "png", "svg", "gif", "doc", "eps", "xls", "ppt", "xls", "txt", "vsd", "js", "css", "rar", "exe", "wma", "mov", "avi", "wmv", "mp3"]
