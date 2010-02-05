@@ -1,6 +1,6 @@
 /*
 ---
-description:   ExitPoll uses Google Analytics to keep track when a user leaves your site, or downloads a file. It works with either the synchronous, or asynchronous Google Analytics tracking.
+description:   ExitPoll uses Google Analytics to keep track of users leaving your site or downloading files. It works with either the synchronous, or asynchronous Google Analytics tracking code.
  
 license: 
    - MIT-style
@@ -34,7 +34,7 @@ var ExitPoll = new Class({
                     return
             } 
 
-            a.addEvent("mouseup", my.track ); // use mouseup in order to catch middle click too; if we use mousedown then canceled clicks will also be counted
+            a.addEvent("mouseup", my.track ); // use mouseup in order to catch middle click too; if we use mousedown then canceled clicks will also be counted; if we use click then middle clicks will not be caught
 
         });
     }, 
@@ -50,7 +50,7 @@ var ExitPoll = new Class({
     
         if (typeof(pageTracker) == "object") pageTracker._trackPageview(l);
         else if(typeof(_gaq) == "object") _gaq.push(['_trackPageview', l]);
-        /*else throw("Google Analytics tracking object not found");*/ // uncomment to enable throwing or errors;
+        /*else throw("Google Analytics tracking object not found");*/ // uncomment to enable throwing errors;
 
         return;
     }

@@ -1,7 +1,7 @@
 ExitPoll
 ==================
 
-ExitPoll uses Google Analytics to keep track when a user leaves your site, or downloads a file. It works with either the synchronous, or asynchronous Google Analytics tracking.
+ExitPoll uses Google Analytics to keep track of users leaving your site, or downloading files. It works with either the synchronous, or asynchronous Google Analytics tracking code.
 
 ![Screenshot](http://c5.simulacre.org/exitpoll/images/banner_200x100.png)
 
