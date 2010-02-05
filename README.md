@@ -13,7 +13,7 @@ How to use
 2. Instantiate an ExitPoll object once the DOM is ready.
         
     window.addEvent("domready", function(){
-       new ExitPoll(); 
+        new ExitPoll(); 
     });
 
 
