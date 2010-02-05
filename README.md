@@ -10,11 +10,11 @@ How to use
 ----------
 
 1. Install the Google Analytics tracking code as usual. The asynchronous and synchronous versions are both supported.
-2. Instantiate an ExitPoll object once the DOM is ready.
+2. Instantiate an ExitPoll object once the DOM is ready:
         
-        window.addEvent("domready", function(){
-            new ExitPoll(); 
-        });
+                window.addEvent("domready", function(){
+                    new ExitPoll(); 
+                });
 
 
 ExitPoll will then bind mouseup events on all links that point to another server, different port on the same server, or non-html file on the same server. Mailto links will also be caught. When the user clicks on one of the links, and does not cancel the click, ExitPoll will register a PageView with Google Analytics. Outgoing links will be prepended with "/outgoing/". Download links will be prepended with "/download/".
