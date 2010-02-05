@@ -12,7 +12,7 @@ How to use
 1. Install the Google Analytics tracking code as usual. The asynchronous and synchronous versions are both supported.
 2. Instantiate an ExitPoll object once the DOM is ready.
     
-
+    #JS
     window.addEvent("domready", function(){
        new ExitPoll(); 
     });
@@ -31,5 +31,6 @@ Arguments
 
 Options
 -------
+
 * parent        : (element) An element that is the parent of all the links that you want to track. Defaults to document.body.
 * fileTypes     : (array) The list of file extensions that should be tracked as downloadable files. Defaults to: [ "pdf", "zip", "rar", "tgz", "gz","gzip", "jpg", "png", "svg", "gif", "doc", "eps", "xls", "ppt", "xls", "txt", "vsd", "js", "css", "rar", "exe", "wma", "mov", "avi", "wmv", "mp3"]
