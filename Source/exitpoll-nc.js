@@ -47,7 +47,6 @@ var ExitPoll = new Class({
         
         if(!$chk(l)) return;
         
-        dbug.log("l:" + l);
     
         if (typeof(pageTracker) == "object") pageTracker._trackPageview(l);
         else if(typeof(_gaq) == "object") _gaq.push(['_trackPageview', l]);
