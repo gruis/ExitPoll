@@ -19,6 +19,8 @@ How to use
 
 ExitPoll will then bind mouseup events on all links that point to another server, different port on the same server, or non-html file on the same server. Mailto links will also be caught. When the user clicks on one of the links, and does not cancel the click, ExitPoll will register a PageView with Google Analytics. Outgoing links will be prepended with "/outgoing/". Download links will be prepended with "/download/".
 
+![Screenshot 1](http://c5.simulacre.org/exitpoll/images/exampleData_464x215.png)
+
 Syntax
 -----
 
@@ -37,4 +39,4 @@ Options
 * event         : (string) The type of event to bind the tracking action to:
     1. click - Fires when the user clicks on the link. Pros: canceled clicks will not be tracked. Cons: middle button clicks will not be tracked
     2. mousedown - Fires when the user pushes down on the link. Pros: middle clicks will be tracked. Cons: canceled clicks will be tracked
-    3. mouseup *default*  - Pros: middle clicks will be tracked and canceled clicks will not be tracked. Cons: ...
+    3. mouseup  - *default* Pros: middle clicks will be tracked and canceled clicks will not be tracked. Cons: ...
